@@ -1,0 +1,409 @@
+Général 
+	body {
+	padding : 0px;
+	margin : 1vw;
+	font-size : 13px;
+	margin-bottom : 0px;
+	}
+
+	a{
+	text-decoration: none;
+	color : inherit;
+	}
+
+	.teal {
+	color : teal;
+	font-style: italic;
+	}
+
+Cookies 
+	#Cookies {
+	display : none;
+	width : 100vw;
+	height : 100vh;
+	background-color: rgba(0, 0, 0, 0.35);
+	justify-content: center;
+	align-items : center;
+	position : fixed;
+	top : 0px;
+	left : 0px;
+	}
+
+	#Cookies_box {
+	background-color : white;
+	border : 2px black solid;
+	margin : 0px 15vw;
+	font-size : 1em
+	}
+
+	#grandir  {
+		font-size : 1.4em;
+		position: relative;
+		top : 1px;
+		margin : 0px .5vw 0px .2vw
+	}
+
+
+	#CEA-span {
+	display : flex;
+	justify-content: flex-end;
+	}
+
+	#CEA {
+	width : fit-content;
+	color : grey;
+	border : none;
+	background-color: white;
+	}
+	
+	#nav-buttons {
+	padding : 0px;
+	display : flex;
+	align-items : flex-end;
+	justify-content: space-around;
+	height : fit-content;
+	margin-bottom : 5vh;
+	height : 20%;
+	}
+
+
+	.bouton-cookies {
+	margin: 0px 1.5vw;
+	box-shadow: 2px 5px teal;
+	}
+
+	.bouton-cookies:active {
+	box-shadow: 1px 1px teal;
+	transform: translateX(1px) translateY(4px);
+	}
+
+	.paraCookies {
+	padding : 0px 1vw;
+	text-align: justify;
+	}
+
+	#AEC {
+	background-color: #000;
+	color : #fff;
+
+	}
+
+	#PLC , #CSA {
+	background-color : #fff;
+
+	}
+
+
+
+	.btnC {
+	font-size : .6em;
+	cursor: pointer;
+	}
+
+
+
+
+	#titre-cookies {
+	text-align : center;
+	}
+
+header 
+	header {
+	height : 10wh;
+	} 
+
+		#logo {
+		width : 30vw
+	}
+
+	#main-nav {
+		font-size : 2em
+	}
+
+	#main-nav > ul {
+		
+		display : flex;
+		justify-content : space-around;
+	}
+
+	ul {
+		padding-left: 0px;
+		list-style: none;
+	}
+
+	#main-nav li {
+		display : list-item;
+	}
+
+	#main-nav * {
+		cursor: pointer;
+	}
+
+	#Contact {
+		margin: 0px 4vw;
+	}
+
+	.sous-menus {
+		display: none;
+		font-size : .8em;
+	}
+
+	.items-main {
+		width : fit-content;
+		height: fit-content;
+	}
+
+	.items_sm{
+	font-variant-caps: small-caps;
+	background: linear-gradient(to right, grey 50%, white 50%);
+	background-size: 200% 100%;
+	background-position:right bottom;
+	transition : all 1s ease;
+	}
+
+
+	.items_sm:hover {
+			background-position : left bottom;
+			font-style : italic;
+	}
+
+main {
+	display : inline-block;
+	align-content: center;
+}
+
+Biographie
+	#presentation {
+		width : 60vw;
+		margin : 0px 20vw;
+		display : flex;
+		align-items: center;
+		justify-items: center;
+		flex-direction: column;
+
+
+	}
+
+
+
+	#QSJ {
+		font-size : 2.3em;
+		margin : 2vh 0px;
+		color : teal;
+
+
+	}
+
+	#photoSak {
+		margin-top : 4vh;
+		width:  30vw;
+		outline : teal thick ridge;
+		border-radius : 5% 
+
+
+	}
+
+	#biographie {
+		font-size : 1.5em;
+		text-align: justify;
+		text-indent: 5%;
+	}
+
+Menu Bijoux 	
+	#grid {
+		display : grid;
+		align-content: center;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 0.5fr 1fr 1fr 1fr;
+		grid-template-areas : "a a" "a a" "b c" "d d";
+		height : 70vh;
+		margin : 0px 14vw;
+		width : 70vw;
+	}
+
+
+	#bagues {
+		grid-column: 1 / span 2;
+		grid-row : 1 / span 2;
+		background-image: url(file:///C:/Users/Admin/OneDrive%20-%20HEC%20Paris/Documents/Code/images/bague1.jpg);
+		}
+
+	#boucles_oreilles {
+		grid-column: 1;
+		grid-row : 3;
+		background-image: url(file:///C:/Users/Admin/OneDrive%20-%20HEC%20Paris/Documents/Code/images/bo1.jpg);
+		}
+
+	#colliers {
+		grid-column : 2;
+		grid-row: 3;
+		background-image: url(file:///C:/Users/Admin/OneDrive%20-%20HEC%20Paris/Documents/Code/images/collier1.jpg);
+		}
+
+	#bracelets {
+		grid-column : 1 / span 2;
+		grid-row : 4;
+		background-image: url(file:///C:/Users/Admin/OneDrive%20-%20HEC%20Paris/Documents/Code/images/bracelet1.jpg);
+		}
+
+	#grid div {
+		margin : 0.3vw;
+		background-repeat: no-repeat;
+		background-size : cover;
+		background-position: center;
+		transition-property: font-size opacity;
+	 	transition-duration: 1s;
+	 	transition-delay: 0s;
+	}
+
+	#grid div:hover {	
+		opacity:  0.5;
+		font-size : 3.5em;
+		}
+
+
+	#grid div {
+		display : flex;
+		align-items : flex-end;
+		font-size : 2em;
+		font-style : italic;
+	}
+
+	#grid span {
+		color : black;
+	}
+
+Footer 
+	footer {
+		margin : 2vh 0px 0px 0px;
+		padding : 2vh 0px;
+		text-align : center;
+		background-color : teal;
+		font-size: 1.2em;
+
+	}
+
+	#Copyright {
+		margin : 1vh 0px;
+		
+		font-style : italic;
+	}
+
+Media queries
+	@media all and (min-width: 640px) {
+		
+		#grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas : "a a b c" "a a d d";
+		}
+
+		#bagues {
+		grid-column: 1 / span 2;
+		grid-row : 1 / span 2;
+		/*background-color: yellow;*/
+		}
+
+		#boucles_oreilles {
+			grid-column: 3;
+			grid-row : 1;
+			/*background-color: blue;*/
+		}
+		#colliers {
+			grid-column : 4;
+			grid-row: 1;
+			/*background-color: red;*/
+		}
+		#bracelets {
+			grid-column : 3/ span 2;
+			grid-row : 2;
+			/*background-color: purple;*/
+		}
+
+		#Cookies_box {
+			
+			font-size : 1.4em
+			}
+
+		.btnC {
+			font-size : .8em
+		}
+	}
+
+	@media all and (min-width: 768px) {
+		#Cookies_box {
+		font-size : 1.6em
+		}
+
+		.btnC {
+		font-size : 1em
+		}
+
+		#presentation {
+		width : 80vw;
+		margin : 0px 10vw;
+		display : flex;
+		align-items: center;
+		justify-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		}
+		#presentation * {
+		margin : 0px 2vw;
+		}
+
+
+
+		#QSJ {
+		font-size : 3em;
+		margin : 2vh 0px;
+		color : teal;
+		width : 70vw;
+		text-align : center
+
+
+		}
+
+		#photoSak {
+		margin-top : 0vh;
+		width:  25vw;
+		outline : teal thick ridge;
+		border-radius : 5% 
+		}
+
+		#biographie {
+		font-size : 1.5em;
+		text-align: justify;
+		text-indent: 5%;
+		width : 30vw;
+
+
+		}
+	}
+
+	@media all and (min-width: 1024px) {
+		#photoSak {
+		margin-top : 0vh;
+		width:  25vw;
+		outline : teal thick ridge;
+		border-radius : 5% 
+		}
+
+		#biographie {
+		font-size : 2.1em;
+		}
+	}
+
+	@media all and (min-width: 1200px) {
+		#Cookies_box {
+		font-size : 1.8em
+		}
+
+		.btnC {
+		font-size : 1.12em
+		}
+		#biographie {
+		font-size : 2.5em;
+		}
+	}
