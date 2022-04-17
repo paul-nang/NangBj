@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/Nang_bijoux.css">
+	<script type="text/javascript" src="js/Nang_bijoux.js"></script>
+	<link rel="icon" type="image/png" sizes="16x16" href="images/logoNB2.jpg">
+	<title>Collection</title>
+</head>
+<body onload="id_collection('Bracelet',2,'PDV-Bracelet','violet et blanc', 'bijoux de très très bonne facture le reuf je te jure', '50 euros seulement'), dim_puis_cacher('sousCollection'), dim_puis_cacher('sousAccueil')">
+
+
+<header >
+			<img id="logo" src="images/logoNB.jpg" alt="logo">
+			<nav id="main-nav">
+			<ul>
+				<ul onmouseleave="demontrer(this.firstChild.nextElementSibling.nextElementSibling), retirer_em(this.firstChild.nextElementSibling)">
+
+					<li class="items-main déroulable" onmouseover="montrer(this.nextElementSibling), effets_menu(this)">Accueil </li>
+
+						<nav class="sous-menus" id="sousAccueil" onmouseover="effets_menu(this.previousElementSibling)">
+
+							<li class="items_sm sm1"><a href="#presentation">Nouveautés</a></li>
+
+							<li class="items_sm sm1"><a href="#presentation"> Présentation</a></li>
+
+							<li class="items_sm sm1"><a href="#Newsletter">Newsletter</a></li>
+
+							<li class="items_sm sm1"><a href="#Crédits">Crédits</a></li>
+						</nav>
+				</ul>
+
+				<ul onmouseleave="demontrer(this.firstChild.nextElementSibling.nextElementSibling), retirer_em(this.firstChild.nextElementSibling)" >
+
+					<li onmouseover="montrer(this.nextElementSibling), effets_menu(this)" class="items-main déroulable"  >Collections</li>
+						<nav class="sous-menus" id="sousCollection" onmouseover="effets_menu(this.previousElementSibling)" >
+
+						<li class="items_sm sm2">Bagues</li>
+
+						<li class="items_sm sm2">Boucles d'oreilles</li>
+
+						<li class="items_sm sm2">Colliers</li>
+
+						<li class="items_sm sm2" >Bracelets</li>
+					</nav>
+				</ul>		
+					<li id="Contact" class="items-main" onmouseleave="retirer_em(this)" onmouseover="effets_menu(this)">Contact</li>
+			</ul>
+			</nav>
+		</header>
+
+<main id="main-collection-Bracelet" class="main-collection">
+			<h2 id="titre-Bracelet1" class="titre-PDV">
+						Collection actuelle : Bracelets
+					</h2>
+			<nav id="menu-bijoux">
+					<ul id= "ulMB">
+						<li class="liMB">Nouveautés</li>
+						<li class="liMB">Colliers</li>
+						<li class="liMB">Boucles d'oreilles</li>
+						<li class="liMB" onclick="NewMain('main-collection-Bracelet')">Bracelets</li>
+						<li class="liMB"> Bagues</li>
+					</ul>
+
+				</nav>
+
+				<section  id="PDV-Bracelet" class="PDV">
+					
+<!-- 
+					<figure  onclick="id_collection('Bracelet',this)" class="articles">
+						
+						<img class="photo-article" src="images/Photos_NB/Bracelet1.jpg" alt="Titre Bague">
+						<div class="div-article" onclick="NewMain('main-Bracelet1')">
+							<h5 class="titre-article"> Bracelet <span class="italik">violet et blanc</span> </h5>
+							<p class="description p-article"> Bijou de bonne facture, confectionné avec amour</p>
+							<p class="prix p-article"> Prix : 50 euros </p>
+							
+						</div>
+						</figure>
+					
+					<figure onclick="id_collection('Bracelet',this)"  class="articles">
+						<img class="photo-article" src="images/Photos_NB/Bracelet2.jpg" alt="Titre Bague">
+						<div class="div-article" >
+							<h5 class="titre-article"> Bracelet <span class="italik">Verdure éternelle</span> </h5>
+							<p class="description p-article"> Joli Bracelet, composé de perles fines selectionnées avec goût</p>
+							<p class="prix p-article"> Prix : 50 euros </p>
+							
+						</div>
+						</figure> -->
+
+				</section>
+				
+
+			
+
+</main>
+
+
+<footer id="Crédits">
+			<nav id="Contact">
+				<ul>
+				<li>Contact</li>
+				<li>Entretien bijoux</li>
+				<li>Guide des tailles</li>
+				<li>Livraison et Retours</li>
+				<li>Mentions légales</li>
+				<li>Conditions d'utilisation</li>
+				<li>Contact</li>
+			</ul>
+
+			 <div id="Copyright">
+				2022 Nang Bijoux &copy; <br>
+				Les bijoux présentés sur ce site sont le produit du travail de Clara Nang et de son équipe.
+			</div>
+		</footer>
+
+</body>
+</html>

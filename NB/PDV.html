@@ -1,0 +1,82 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/Nang_bijoux.css">
+	<script type="text/javascript" src="js/Nang_bijoux.js"></script>
+	<link rel="icon" type="image/png" sizes="16x16" href="images/logoNB2.jpg">
+	<title>Collection</title>
+</head>
+<body onload="dim_puis_cacher('sousCollection'), dim_puis_cacher('sousAccueil')">
+
+<header >
+			<img id="logo" src="images/logoNB.jpg" alt="logo">
+			<nav id="main-nav">
+			<ul>
+				<ul onmouseleave="demontrer(this.firstChild.nextElementSibling.nextElementSibling), retirer_em(this.firstChild.nextElementSibling)">
+
+					<li class="items-main déroulable" onmouseover="montrer(this.nextElementSibling), effets_menu(this)">Accueil </li>
+
+						<nav class="sous-menus" id="sousAccueil" onmouseover="effets_menu(this.previousElementSibling)">
+
+							<li class="items_sm sm1"><a href="#presentation">Nouveautés</a></li>
+
+							<li class="items_sm sm1"><a href="#presentation"> Présentation</a></li>
+
+							<li class="items_sm sm1"><a href="#Newsletter">Newsletter</a></li>
+
+							<li class="items_sm sm1"><a href="#Crédits">Crédits</a></li>
+						</nav>
+				</ul>
+
+				<ul onmouseleave="demontrer(this.firstChild.nextElementSibling.nextElementSibling), retirer_em(this.firstChild.nextElementSibling)" >
+
+					<li onmouseover="montrer(this.nextElementSibling), effets_menu(this)" class="items-main déroulable"  >Collections</li>
+						<nav class="sous-menus" id="sousCollection" onmouseover="effets_menu(this.previousElementSibling)" >
+
+						<li class="items_sm sm2">Bagues</li>
+
+						<li class="items_sm sm2">Boucles d'oreilles</li>
+
+						<li class="items_sm sm2">Colliers</li>
+
+						<li class="items_sm sm2" >Bracelets</li>
+					</nav>
+				</ul>		
+					<li id="Contact" class="items-main" onmouseleave="retirer_em(this)" onmouseover="effets_menu(this)">Contact</li>
+			</ul>
+			</nav>
+		</header>
+
+
+<main id="main-bague1" class="page-de-vente">
+
+	<h2 class="titre-bijoux-PDV"> Bracelet <span class="italik">Violet et Blanc</span></h2>
+
+	<section class="section-PDV">
+		<div class="side-div-PDV">
+		<figure class="fig1-PDV fig-lat-PDV figPDV"><img onmouseover="HoverchgtPhoto(this)" onclick="HoverchgtPhoto(this)" class="photo1-PDV photo-lat-PDV photoPDV" src="images/Photos_NB/bracelet1.jpg"></figure>
+		<figure class="fig2-PDV fig-lat-PDV figPDV"><img onmouseover="HoverchgtPhoto(this)" onclick="HoverchgtPhoto(this)" class="photo2-PDV photo-lat-PDV photoPDV"  src="images/Photos_NB/bracelet1_2.jpg"></figure>
+
+		</div>
+		<div class="main-div-PDV">
+		<figure class="mainfig-PDV figPDV" ><img class="mainphoto-PDV photoPDV" src="images/Photos_NB/bracelet1.jpg"></figure>
+	</div>
+
+	<p class="description-PDV">
+	Ce bijoux est vraiment incroyable, tu ne regretteras jamais de l'avoir acheté ! en plus les trucs violets c des coeurs !! </p>
+	<p class="prix-PDV">Prix : Disponible pour la modique somme de 500euros ! tkt</p>
+
+	<button class="AJ-Panier-PDV">Ajouter au Panier</button>	
+
+	</section>
+	
+
+
+
+
+</main>
+</body>
+
+</html>

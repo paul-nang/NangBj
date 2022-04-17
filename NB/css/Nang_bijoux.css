@@ -1,0 +1,618 @@
+
+body {
+padding : 0px;
+margin : 1vw;
+font-size : 13px;
+margin-bottom : 0px;
+background-color: var(--color-backg);
+--main-color : #97D487;
+--color-backg : white;
+--font-titre : Tahoma, Helvetica, Verdana;
+--font-content : Georgia, Garamond; 
+--longueur-box-article : 20vw;
+--marge-box-article : 7.5vw;
+font-family : var(--font-content);
+
+}
+ul {
+padding-left: 0px;
+list-style: none;
+}
+
+#menu-bijoux {
+	box-sizing: border-box;
+	width : 23vw;
+	font-size : 2em;
+	display : flex;
+	justify-content : center;
+	margin : 5vh 2vw 0px 0px;
+	}
+
+
+ .liMB {
+ 	background-color: var(--main-color);
+ 	margin-top : 0.7vh;
+ 	padding : 0px .8vw;
+ 	
+ }
+
+.liMB:hover{
+	background: linear-gradient(to left, var(--color-backg) , var(--main-color));
+	font-style : italic;
+	cursor : pointer;
+}
+.Section-Article {
+	box-sizing: border-box;
+	width : 72vw;
+
+	}
+
+.mainfig-PDV{
+
+	 transition: 0.5s all ease-in-out;
+
+}
+
+.main-div-PDV{
+	overflow : hidden;
+}
+
+.mainfig-PDV:hover {
+	transform : scale(1.5);
+
+
+}
+
+
+
+
+.articles {
+		width : 35vw;
+		margin : 0px;
+		display : inline-block;
+		margin-bottom : 5vh;
+	}
+
+
+.photo-article {
+	
+	width : var(--longueur-box-article);
+	height : var(--longueur-box-article);
+	margin : 0px var(--marge-box-article) ;
+}	
+
+.div-article {
+	width : var(--longueur-box-article);
+	margin : 0px var(--marge-box-article);
+}
+
+.p-article {
+	text-align : center;
+
+}
+
+.titre-article {
+	text-align : center;
+	margin : 1vh 0px;
+	font-size : 1.2em;
+}
+
+.italik {
+	font-style : italic
+}
+
+.main-collection {
+	display : flex;
+	flex-wrap : wrap;
+	display : none
+}
+
+.titre-Collection{
+	width : 98vw;
+	font-size : 2em;
+	text-align : center
+}
+
+
+
+.page-de-vente {
+	display : none;
+	flex-wrap: wrap;
+}
+
+.photo-lat-PDV, .fig-lat-pdv {
+	width : 20vw
+}
+
+.mainphoto-PDV, .mainfig-PDV {
+	width : 50vw
+}
+
+.figPDV {
+	
+	margin : 0px;
+}
+
+.section-PDV {
+	display : flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.side-div-PDV {
+	width : 20vw;
+	margin : 5vh 5vw 5vh 8vw;
+}
+.main-div-PDV {
+	margin : 5vh 8vw 5vh 5vw;
+}
+
+.fig1-PDV {
+	margin-bottom : 10vw;
+}
+
+.titre-bijoux-PDV {
+	text-align : center;
+	color : var(--main-color);
+	width : 98vw;
+}
+ .description-PDV {
+ 	width : 70vw;
+ 	margin : 2vh 14vw;
+ 	font-size : 1.3em;
+ 	text-align : center;
+ 	color : var(--main-color);
+ }
+
+ .prix-PDV {
+ 	width : 70vw;
+ 	margin : 1vw 14vw;
+ 	font-size : 1.3em;
+ 	text-align : center;
+
+ }
+
+.AJ-Panier-PDV {
+background-color: var(--main-color);
+border : none;
+padding : .5vw 1vw;
+border-radius: 10%;
+margin : 3vh 0px
+}
+a{
+text-decoration: none;
+color : inherit;
+}
+ 
+
+
+#Remerciements {
+	visibility : hidden;
+	font-size: 1.3em;
+	font-family: var(--font-content) ;
+	font-style: italic;
+}
+ 
+
+#Newsletter {
+	display : flex;
+	flex-direction : column;
+	align-items : center;
+	margin : 2.7vh 0vh 0vh 0vh;
+
+}
+
+
+#Titre-Newsletter{
+	margin : 1vh 0px;
+	font-family : var(--font-titre);
+	font-size: 1.4em;
+	max-width: 80vw;
+
+}
+
+#Bouton-Newsletter {
+	Width : 30vw;
+	margin-top : 1vh;
+	
+}
+
+#Input-Newsletter, #Bouton-Newsletter {
+	font-family : var(--font-content);
+	font-size: 1.4em;
+
+}
+
+#Input-Newsletter {
+	border : 2px black solid;
+	width: 25vw;
+	color : rgba(0, 0, 0, .5);
+
+}
+
+.teal {
+color : var(--main-color);
+font-style: italic;
+}
+
+
+#Cookies {
+display : none;
+width : 100vw;
+height : 100vh;
+background-color: rgba(0, 0, 0, 0.35);
+justify-content: center;
+align-items : center;
+position : fixed;
+top : 0px;
+left : 0px;
+
+}
+
+#Cookies *{
+	font-family : var(--font-content);
+}
+
+#titre-cookies {
+	font-family : var(--font-titre);
+}
+
+#Cookies_box {
+background-color : var(--color-backg);
+border : 2px black solid;
+margin : 0px 15vw;
+font-size : 1em
+}
+
+#grandir  {
+font-size : 1.4em;
+position: relative;
+top : 1px;
+margin : 0px .5vw 0px .2vw
+}
+
+
+#CEA-span {
+display : flex;
+justify-content: flex-end;
+}
+
+#CEA {
+width : fit-content;
+color : grey;
+border : none;
+background-color: var(--color-backg);
+}
+
+#nav-buttons {
+padding : 0px;
+display : flex;
+align-items : flex-end;
+justify-content: space-around;
+height : fit-content;
+margin-bottom : 5vh;
+height : 20%;
+}
+
+
+.bouton-cookies {
+margin: 0px 1.5vw;
+box-shadow: 2px 5px var(--main-color);
+}
+
+.bouton-cookies:active {
+box-shadow: 1px 1px var(--main-color);
+transform: translateX(1px) translateY(4px);
+}
+
+.paraCookies {
+padding : 0px 1vw;
+text-align: justify;
+}
+
+#AEC {
+background-color: #000;
+color : var(--color-backg);
+
+}
+
+#PLC , #CSA {
+background-color : var(--color-backg);
+
+}
+
+
+
+.btnC {
+font-size : .6em;
+cursor: pointer;
+}
+
+
+
+
+#titre-cookies {
+text-align : center;
+}
+
+header * {
+	font-family : var(--font-titre);
+}
+
+#logo {
+width : 30vw
+}
+
+#main-nav {
+font-size : 2em
+}
+
+#main-nav > ul {
+
+display : flex;
+justify-content : space-around;
+}
+
+
+
+#main-nav li {
+display : list-item;
+}
+
+#main-nav * {
+cursor: pointer;
+}
+
+#Contact {
+margin: 0px 4vw;
+}
+
+.sous-menus {
+display: none;
+font-size : .8em;
+}
+
+.items-main {
+width : fit-content;
+height: fit-content;
+}
+
+.items_sm{
+font-variant-caps: small-caps;
+background: linear-gradient(to right, var(--main-color) 50%, var(--color-backg) 50%);
+background-size: 200% 100%;
+background-position:right bottom;
+transition : all 1s ease;
+}
+
+
+.items_sm:hover {
+	background-position : left bottom;
+	font-style : italic;
+}
+
+
+#presentation {
+margin : 3vh 0px;
+width : 60vw;
+padding : 0px 20vw 2vh 20vw;
+display : flex;
+align-items: center;
+justify-items: center;
+flex-direction: column;
+background-color: var(--main-color);
+
+
+
+}
+
+
+
+#QSJ {
+font-size : 2.3em;
+margin : 2vh 0px;
+font-family : var(--font-titre);
+}
+
+#photoSak {
+margin-top : 4vh;
+outline : var(--main-color) thick ridge;
+border-radius : 5%;
+
+
+
+}
+
+#biographie {
+font-size : 1.5em;
+text-align: justify;
+text-indent: 5%;
+font-family : var(--font-content);
+}
+
+
+#grid {
+display : grid;
+align-content: center;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 0.5fr 1fr 1fr 1fr;
+grid-template-areas : "a a" "a a" "b c" "d d";
+height : 70vh;
+margin : 0px 14vw;
+width : 70vw;
+}
+
+.span-grid {
+	color : var(--main-color);
+	font-family : var(--font-content);
+}
+
+#bagues {
+grid-column: 1 / span 2;
+grid-row : 1 / span 2;
+background-image: url(file:///C:/Users/Admin/OneDrive%20-%20HEC%20Paris/Documents/Code/NB/images/bague1_2.jpg);
+}
+
+#boucles_oreilles {
+grid-column: 1;
+grid-row : 3;
+background-image: url(file:///C:/Users/Admin/OneDrive%20-%20HEC%20Paris/Documents/Code/NB/images/bo1.jpg);
+}
+
+#Collier {
+grid-column : 2;
+grid-row: 3;
+background-image: url(file:///C:/Users/Admin/OneDrive%20-%20HEC%20Paris/Documents/Code/NB/images/collier1_2.jpg);
+}
+
+#Bracelet {
+grid-column : 1 / span 2;
+grid-row : 4;
+background-image: url(file:///C:/Users/Admin/OneDrive%20-%20HEC%20Paris/Documents/Code/NB/images/Bracelet1_2.jpg);
+}
+
+#grid div {
+margin : 0.3vw;
+background-repeat: no-repeat;
+background-size : cover;
+background-position: center;
+transition-property: font-size, opacity;
+	transition-duration: 1s;
+	transition-delay: 0s;
+}
+
+#grid div:hover {	
+opacity:  0.5;
+font-size : 3.5em;
+}
+
+
+#grid div {
+display : flex;
+align-items : flex-end;
+font-size : 2em;
+font-style : italic;
+}
+
+
+footer {
+margin : 2vh 0px 0px 0px;
+padding : 2vh 0px;
+text-align : center;
+background-color : var(--main-color);
+font-size: 1.2em;
+font-family : var(--font-content);
+width : 98vw;
+
+}
+
+#Copyright {
+margin : 1vh 0px;
+
+font-style : italic;
+}
+
+
+@media all and (min-width: 640px) {		
+#grid {
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+grid-template-areas : "a a b c" "a a d d";
+}
+
+#bagues {
+grid-column: 1 / span 2;
+grid-row : 1 / span 2;
+
+}
+
+#boucles_oreilles {
+	grid-column: 3;
+	grid-row : 1;
+}
+#Collier {
+	grid-column : 4;
+	grid-row: 1;
+}
+#Bracelet {
+	grid-column : 3/ span 2;
+	grid-row : 2;
+}
+
+#Cookies_box {
+	
+	font-size : 1.4em
+	}
+
+.btnC {
+	font-size : .8em
+}
+}
+
+@media all and (min-width: 768px) {
+#Cookies_box {
+font-size : 1.6em
+}
+
+.btnC {
+font-size : 1em
+}
+
+#presentation {
+width : 80vw;
+padding : 0px 10vw 3vh 10vw;
+display : flex;
+align-items: center;
+justify-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+#presentation * {
+margin : 0px 2vw;
+}
+
+
+
+#QSJ {
+font-size : 3em;
+margin : 2vh 0px;
+width : 70vw;
+text-align : center
+
+
+}
+
+#photoSak {
+margin-top : 0vh;
+}
+
+#biographie {
+font-size : 1.5em;
+text-align: justify;
+text-indent: 5%;
+width : 30vw;
+
+
+}
+}
+
+@media all and (min-width: 1024px) {
+
+#biographie {
+font-size : 2.1em;
+}
+}
+
+@media all and (min-width: 1200px) {
+#Cookies_box {
+font-size : 1.8em
+}
+
+.btnC {
+font-size : 1.12em
+}
+#biographie {
+font-size : 2.5em;
+}
+}

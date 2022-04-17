@@ -1,0 +1,130 @@
+<!DOCTYPE html><html lang="fr" >
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/Nang_bijoux.css">
+		<script type="text/javascript" src="js/Nang_bijoux.js"></script>
+		<title>Nang Bijoux</title>
+
+		<link rel="icon" type="image/png" sizes="16x16" href="images/logoNB2.jpg">
+	</head>
+
+ <body id="body" onload="dim_puis_cacher('sousCollection'), dim_puis_cacher('sousAccueil'), afficher(), mesurer_photo(), id_collection('Bracelet',4,'violet et blanc', 'bijoux de très très bonne facture le reuf je te jure', '50 euros seulement'), id_collection('Collier',3,'Titre-Collier', 'bijoux de très très bonne facture le reuf je te jure', '50 euros') , Page2Vente(4,'Bracelet','titre-bijoux', 'description', 50), Page2Vente(3,'Collier','titre-bijoux', 'description', 50), test(), url_check()" onhashchange="test(), url_check()" > 
+		<header id="header">
+			<img id="logo" src="images/logoNB.jpg" alt="logo">
+			<nav id="main-nav">
+			<ul>
+				<ul onmouseleave="demontrer(this.firstChild.nextElementSibling.nextElementSibling), retirer_em(this.firstChild.nextElementSibling)">
+
+					<li class="items-main déroulable" onclick="NewMain_block('main-accueil')" onmouseover="montrer(this.nextElementSibling), effets_menu(this)">Accueil </li>
+
+						<nav class="sous-menus" id="sousAccueil" onmouseover="effets_menu(this.previousElementSibling)">
+
+							<li class="items_sm sm1" onclick="NewMain_block('main-accueil')"><a href="#presentation"> Présentation</a></li>
+
+							<li class="items_sm sm1" onclick="NewMain_block('main-accueil')"><a href="#Newsletter">Newsletter</a></li>
+
+							<li class="items_sm sm1"><a href="#Crédits">Crédits</a></li>
+						</nav>
+				</ul>
+
+				<ul onmouseleave="demontrer(this.firstChild.nextElementSibling.nextElementSibling), retirer_em(this.firstChild.nextElementSibling)" >
+
+					<li onmouseover="montrer(this.nextElementSibling), effets_menu(this)" class="items-main déroulable" >Collections</li>
+						<nav class="sous-menus" id="sousCollection" onmouseover="effets_menu(this.previousElementSibling)" >
+
+						<li class="items_sm sm2" onclick="NewMain('main-collection-Bague')">Bagues</li>
+
+						<li class="items_sm sm2" onclick="NewMain('main-collection-BDO')">Boucles d'oreilles</li>
+
+						<li class="items_sm sm2" onclick="NewMain('main-collection-Collier')" >Colliers</li>
+ 
+						<li class="items_sm sm2" onclick="NewMain('main-collection-Bracelet')">Bracelets</li>
+					</nav>
+				</ul>		
+					<li id="Contact" class="items-main" onmouseleave="retirer_em(this)" onmouseover="effets_menu(this)">Contact</li>
+			</ul>
+			</nav>
+		</header>
+
+		<main id="main-accueil">
+			
+			<div id="grid">
+				<div id="bagues"  onclick="NewMain('main-collection-Bague')"><span class="span-grid" id="span1">Bagues</span></div>
+				<div id="boucles_oreilles" onclick="NewMain('main-collection-BDO')"><span class="span-grid" id="span2" >Boucles d'oreilles</span>
+				</div>
+				<div id="Collier" onclick="NewMain('main-collection-Collier')" ><span class="span-grid" id="span3">Colliers</span></div>
+				<div id="Bracelet" onclick="NewMain('main-collection-Bracelet')"><span class="span-grid" id="span4">Bracelets</span></div>
+			</div>
+
+			<section id="presentation">
+				
+				<h4 id="QSJ"> Qui suis-je ? </h4>
+				<span id="biographie"> Passionnée de bijoux nani nana, j'aime bien raconter ma vie et faire plein d'autres choses. Je suis entre autres un réel sak.Passionnée de bijoux nani nana, j'aime bien raconter ma vie et faire plein d'autres choses. Je suis entre autres un réel sak.Passionnée de bijoux nani nana, j'aime bien raconter ma vie et faire plein d'autres choses. Je suis entre autres un réel sak.</span>
+				<a href="https://www.instagram.com/claranng/" target="_blank" ><img id="photoSak" src="images/sak.jpg" alt="photo_de_moi"></a>
+				</section>
+			
+			<section id="Newsletter">
+				<h4 id="Titre-Newsletter">Abonne toi à ma newsletter pour en apprendre toujours plus sur ma vie passionnante ! </h4>
+				<input id="Input-Newsletter" type="email" value="Mon meilleur email" onclick="input('Input-Newsletter')">
+				<button id="Bouton-Newsletter" onclick="reveal('Remerciements')">Oui, je veux en apprendre plus sur la vie passionnante de Clara Nang !</button>
+				<p id="Remerciements">Merci, vous avez été ajouté avec succès à notre Newsletter! Surveillez votre boite de réception !</p>
+				</section>
+
+		</main>
+
+<div id="Cookies">
+		<div id="Cookies_box">
+
+						<span id="CEA-span" > <button class="btnC" id="CEA" onclick="fermer_cookies()">Continuer et Accepter <span id="grandir"> x </span></button> 
+
+			 </span>
+
+			<h4 id="titre-cookies"> <span class="teal">NANG BIJOUX</span> respecte votre vie privée </h4>
+
+			<p class="paraCookies" id="para1"> <span class="teal">Nos partenaires</span> et nous utilisons des cookies ou technologies similaires pour stocker et accéder à des données personnelles vous concernant comme celles liées à votre visite sur ce site. Nous pouvons également utiliser des traceurs exemptés du recueil du consentement pour le dépôt de cookies de mesure d’audience. Vous pouvez retirer votre consentement ou vous opposer aux traitements basés sur l'intérêt légitime à tout moment en cliquant sur <a class="teal" href="#">'Paramétrer'</a>.</p>
+
+			<p class="paraCookies" id="para2">Avec nos partenaires, nous traitons les données suivantes :
+			Données de géolocalisation précises et identification par analyse du terminal, Mesure d'audience, données d’audience et développement de produit, Stocker et/ou accéder à des informations sur un terminal.</p>
+			<nav id="nav-buttons">
+			<button onclick="fermer_cookies()" class="bouton-cookies btnC" id="CSA">Continuer sans Accepter</button> 
+			<button onclick="fermer_cookies()" class="bouton-cookies btnC" id="PLC">Paramétrer les cookies</button>
+			<button onclick="fermer_cookies()" class="bouton-cookies btnC" id="AEC">Accepter et fermer</button>
+			</nav>
+
+	</div>
+	</div>
+
+<main id="main-collection-Bracelet" class="main-collection" style="display : none;">
+			
+			</main>		
+
+
+
+<main id="main-collection-Collier" class="main-collection" style="display : none;">
+			
+			</main>		
+ 
+
+
+<footer id="Crédits">
+			<nav id="Contact">
+				<ul>
+				<li>Contact</li>
+				<li>Entretien bijoux</li>
+				<li>Guide des tailles</li>
+				<li>Livraison et Retours</li>
+				<li>Mentions légales</li>
+				<li>Conditions d'utilisation</li>
+				<li>Contact</li>
+			</ul>
+
+			 <div id="Copyright">
+				2022 Nang Bijoux &copy; <br>
+				Les bijoux présentés sur ce site sont le produit du travail de Clara Nang et de son larbin de frère.
+			</div>
+		</footer>
+
+	</body>
+
+</html>
